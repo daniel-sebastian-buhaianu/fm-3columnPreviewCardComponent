@@ -12,13 +12,31 @@ button {
   border-radius: 25px;
   background-color: #F2F2F2;
 }
+button:hover {
+  border: 2px solid #FFF;
+  cursor: pointer;
+  background-color: transparent;
+}
 .group {
   width: 327px;
   margin: 88px auto;
 }
+@media only screen and (min-width: 1440px) {
+  .group {
+    width: 920px;
+    margin-top: 171px;
+    margin-bottom: 129px;
+    display: flex;
+  }
+}
 .group__item:first-child {
   background-color: #E28625;
   border-radius: 8px 8px 0 0;
+}
+@media only screen and (min-width: 1440px) {
+  .group__item:first-child {
+    border-radius: 8px 0 0 8px;
+  }
 }
 .group__item:first-child button {
   color: #E28625;
@@ -33,8 +51,16 @@ button {
   background-color: #004140;
   border-radius: 0 0 8px 8px;
 }
+@media only screen and (min-width: 1440px) {
+  .group__item:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+}
 .group__item:last-child button {
   color: #004140;
+}
+.group__item button:hover {
+  color: #FFF;
 }
 .group__item {
   padding: 48px 48.5px 48px 47.5px;
